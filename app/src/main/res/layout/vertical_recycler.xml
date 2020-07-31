@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/cardview_margin"
+    app:ignore="NamespaceTypo"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="@dimen/cardview_margin"
+    card_view:cardElevation="@dimen/cv_elevation"
+    card_view:contentPadding="@dimen/cv_content_padd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:orientation="vertical">
+                <!--Text View over Card View-->
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/date_margin"
+                    android:text="Sun, 2 December - 23:30"
+                    android:textColor="#494848"
+                    android:textSize="@dimen/tv_dt_size" />
+                <!--Text View over Card View-->
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arizona Cardinals"
+                    android:textColor="#494848"
+                    android:textSize="@dimen/tv_ar_size" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/betNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_margin="@dimen/cardview_margin"
+                android:layout_weight="0.1"
+                app:ignore="NamespaceTypo"
+                card_view:cardBackgroundColor="#368139"
+                card_view:cardCornerRadius="@dimen/cv_horizon_rad"
+                card_view:contentPadding="@dimen/cv_content_padd">
+                <!--Text View over Card View-->
+                <TextView
+                    android:id="@+id/betTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/cardview_margin"
+                    android:layout_marginBottom="@dimen/cardview_margin"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:text="@string/bet_now"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/tv_bn_size" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gm_margin"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:orientation="vertical">
+                <!--Text View over Card View-->
+                <ImageView
+                    android:id="@+id/child_imageView"
+                    android:layout_width="@dimen/tm_iv_sz"
+                    android:layout_height="@dimen/tm_iv_sz"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/img_content"
+                    android:src="@drawable/ic_launcher_foreground"
+                    android:tint="@color/colorAccent" />
+                <!--Text View over Card View-->
+                <TextView
+                    android:id="@+id/tV2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Cowboy"
+                    android:textColor="#191818"
+                    android:textSize="@dimen/tm_tv_sz" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tV3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vs"
+                    android:textColor="#302E2E"
+                    android:textSize="@dimen/tm_vs_sz"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/gm_margin"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/child_imageView3"
+                    android:layout_width="@dimen/tm_iv_sz"
+                    android:layout_height="@dimen/tm_iv_sz"
+                    android:contentDescription="@string/img_content"
+                    android:src="@drawable/ic_launcher_foreground"
+                    android:tint="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/tV4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Eagle"
+                    android:textColor="#191818"
+                    android:textSize="@dimen/tm_tv_sz" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

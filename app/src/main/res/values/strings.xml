@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BoxChamp</string>
+    <string name="tab_text_1">\u2605</string>
+    <string name="tab_text_2">UPCOMING</string>
+    <string name="tab_text_3">LIVE</string>
+    <string name="tab_text_4">PAST</string>
+    <string name="arizona_cardinals">Arizona Cardinals</string>
+    <string name="img_content">teamname</string>
+    <string name="bet_now">Bet Now</string>
+    <string name="vs">VS</string>
+</resources>
